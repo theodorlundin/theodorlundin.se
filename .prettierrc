@@ -1,0 +1,12 @@
+{
+  "semi": false,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "tailwindFunctions": ["cn", "clsx", "cva"],
+  "trailingComma": "none",
+  "plugins": [
+    "prettier-plugin-tailwindcss",
+    "prettier-plugin-classnames",
+    "prettier-plugin-merge"
+  ]
+}

@@ -1,0 +1,29 @@
+name: Deploy repo
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Build
+        run: |
+          npm install
+          npm run build
+
+      - name: Deploy with FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: 'linux175.unoeuro.com'
+          username: 'theodorlundin.se'
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: 21
+          local-dir: dist/
+          server-dir: public_html/
