@@ -47,10 +47,10 @@ export default function BuyWebsite() {
   useDocumentTitle('Köp en hemsida › Theodor Lundin')
   const { page } = useParams()
   const [enkelJsx, enkelRaw, enkelLoading] = useMarkdown(
-    `/src/content/websites/Enkel.md`
+    `/content/websites/Enkel.md`
   )
   const [alltJsx, alltRaw, alltLoading] = useMarkdown(
-    `/src/content/websites/Allt-i-ett.md`
+    `/content/websites/Allt-i-ett.md`
   )
 
   function NavTab({ correspondingPage, children }) {

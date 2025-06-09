@@ -7,7 +7,7 @@ import ContainerNarrow from '../layouts/ContainerNarrow'
 
 export default function Integrity() {
   useDocumentTitle('Integritetspolicy › Theodor Lundin')
-  const [jsx, raw, loading] = useMarkdown('/src/content/Integrity.md')
+  const [jsx, raw, loading] = useMarkdown('/content/Integrity.md')
 
   return (
     <div>

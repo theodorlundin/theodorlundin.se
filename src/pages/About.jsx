@@ -7,7 +7,7 @@ import ContainerNarrow from '../layouts/ContainerNarrow'
 
 export default function About() {
   useDocumentTitle('Om mig › Theodor Lundin')
-  const [jsx, raw, loading] = useMarkdown('/src/content/About.md')
+  const [jsx, raw, loading] = useMarkdown('/content/About.md')
 
   return (
     <div>
