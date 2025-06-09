@@ -1,12 +1,15 @@
 import Footer from '../components/ui/footer/Footer'
 import ContentLoader from '../components/ui/loaders/ContentLoader'
 import Navbar from '../components/ui/navbar/Navbar'
-import useDocumentTitle from '../hooks/useDocumentTitle'
+import useDocumentProps from '../hooks/useDocumentProps'
 import useMarkdown from '../hooks/useMarkdown'
 import ContainerNarrow from '../layouts/ContainerNarrow'
 
 export default function Integrity() {
-  useDocumentTitle('Integritetspolicy › Theodor Lundin')
+  useDocumentProps({
+    title: 'Integritet › Theodor Lundin',
+    description: 'Läs integritetspolicyn.'
+  })
   const [jsx, raw, loading] = useMarkdown('/content/Integrity.md')
 
   return (

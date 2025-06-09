@@ -18,16 +18,6 @@ jobs:
           npm install
           npm run build
 
-      - name: Create .htaccess file in dist
-        run: |
-          cat <<EOL > dist/.htaccess
-          Options -MultiViews
-          RewriteEngine On
-          RewriteCond %{REQUEST_FILENAME} !-f
-          RewriteCond %{REQUEST_FILENAME} !-d
-          RewriteRule . /index.html [L]
-          EOL
-
       - name: Deploy with FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:

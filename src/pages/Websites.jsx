@@ -3,13 +3,17 @@ import WebsitesHeader from '../components/features/websites/WebsitesHeader'
 import WebsiteTier from '../components/features/websites/WebsiteTier'
 import Footer from '../components/ui/footer/Footer'
 import Navbar from '../components/ui/navbar/Navbar'
-import useDocumentTitle from '../hooks/useDocumentTitle'
+import useDocumentProps from '../hooks/useDocumentProps'
 import Container from '../layouts/Container'
 import ContainerNarrow from '../layouts/ContainerNarrow'
-import { motion, scale } from 'motion/react'
+import { motion } from 'motion/react'
 
 export default function Websites() {
-  useDocumentTitle('Köp en hemsida › Theodor Lundin')
+  useDocumentProps({
+    title: 'Köp en hemsida › Theodor Lundin',
+    description:
+      'Jag har utvecklat hemsidor i fem år. Jag jobbar gärna med dig!'
+  })
 
   return (
     <div>

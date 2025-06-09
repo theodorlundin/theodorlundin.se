@@ -13,10 +13,10 @@ import {
 import useMarkdown from '../hooks/useMarkdown'
 import ContentLoader from '../components/ui/loaders/ContentLoader'
 import WebsiteForm from '../components/features/websites/WebsiteForm'
-import useDocumentTitle from '../hooks/useDocumentTitle'
 import { Link, useParams } from 'react-router-dom'
 import { motion } from 'motion/react'
 import PriceProgress from '../components/features/websites/PriceProgress'
+import useDocumentProps from '../hooks/useDocumentProps'
 
 function CalEmbed() {
   useEffect(() => {
@@ -44,7 +44,11 @@ function CalEmbed() {
 }
 
 export default function BuyWebsite() {
-  useDocumentTitle('Köp en hemsida › Theodor Lundin')
+  useDocumentProps({
+    title: 'Köp en hemsida › Theodor Lundin',
+    description:
+      'Jag har utvecklat hemsidor i fem år. Jag jobbar gärna med dig!'
+  })
   const { page } = useParams()
   const [enkelJsx, enkelRaw, enkelLoading] = useMarkdown(
     `/content/websites/Enkel.md`

@@ -1,12 +1,15 @@
 import Footer from '../components/ui/footer/Footer'
 import ContentLoader from '../components/ui/loaders/ContentLoader'
 import Navbar from '../components/ui/navbar/Navbar'
-import useDocumentTitle from '../hooks/useDocumentTitle'
+import useDocumentProps from '../hooks/useDocumentProps'
 import useMarkdown from '../hooks/useMarkdown'
 import ContainerNarrow from '../layouts/ContainerNarrow'
 
 export default function Typografi() {
-  useDocumentTitle('Typografi › Theodor Lundin')
+  useDocumentProps({
+    title: 'Typografi › Theodor Lundin',
+    description: 'Typografin för theodorlundin.se'
+  })
   const [jsx, raw, loading] = useMarkdown('/content/Typografi.md')
 
   return (

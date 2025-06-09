@@ -4,10 +4,14 @@ import Navbar from '../components/ui/navbar/Navbar'
 import Container from '../layouts/Container'
 import ContainerNarrow from '../layouts/ContainerNarrow'
 import ContactForm from '../components/features/contact/ContactForm'
-import useDocumentTitle from '../hooks/useDocumentTitle'
+import useDocumentProps from '../hooks/useDocumentProps'
 
 export default function Contact() {
-  useDocumentTitle('Kontakt › Theodor Lundin')
+  useDocumentProps({
+    title: 'Kontakt › Theodor Lundin',
+    description:
+      'Tveka inte att kontaka mig. Jag svarar så snart jag kan, oftast inom en dag.'
+  })
 
   return (
     <div>

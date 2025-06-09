@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
 import Websites from './pages/Websites'
@@ -7,10 +7,16 @@ import Typografi from './pages/Typografi'
 import Integrity from './pages/Integrity'
 import BuyWebsite from './pages/BuyWebsite'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import ReactGA from 'react-ga4'
 
 const queryClient = new QueryClient()
 
+ReactGA.initialize('G-M9J6379SMQ')
+
 export default function App() {
+  const location = useLocation()
+  ReactGA.send({ hitType: 'pageview', page: location.pathname })
+
   return (
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
