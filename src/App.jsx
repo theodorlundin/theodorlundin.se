@@ -8,18 +8,25 @@ import Integrity from './pages/Integrity'
 import BuyWebsite from './pages/BuyWebsite'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import ReactGA from 'react-ga4'
+import { useEffect } from 'react'
 
 const queryClient = new QueryClient()
 
 ReactGA.initialize('G-M9J6379SMQ')
 
-export default function App() {
+function AnalyticsHandler() {
   const location = useLocation()
-  ReactGA.send({ hitType: 'pageview', page: location.pathname })
+  useEffect(() => {
+    ReactGA.send({ hitType: 'pageview', page: location.pathname })
+  }, [location])
+  return null
+}
 
+export default function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
+        <AnalyticsHandler />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/om-mig" element={<About />} />
