@@ -3,7 +3,7 @@ Kul att du är intresserad! Paketet _Allt-i-ett_ betalas som en tjänst, där ja
 Prissättningen ser ut så här:
 
 - Startpriset utgår från **3500kr**, men är beroende på hur avancerad om omfattande hemsidan är. Detta betalas en gång.
-- Därefter betalas en avgift månadsvis som utgår från **250kr**, men är även här helt beroende på vilken jobb som läggs ner den månaden.
+- Därefter betalas en avgift månadsvis som utgår från **199kr**, men är även här helt beroende på vilken jobb som läggs ner den månaden.
 - Prisets bedömning görs när jag har en klar bild av hur hemsidan ska se ut och fungera. Längre ner på sidan kan du se en förenklad skala på hur priset på en hemsida _generellt_ kan se ut.
 
 Känner du dig redo är det fritt fram att boka ett videomöte med mig i kalendern nedan. Skulle du vilja maila först går det självklart bra, använd då formuläret längst ner på sidan.

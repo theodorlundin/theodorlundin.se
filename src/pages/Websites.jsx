@@ -102,7 +102,7 @@ export default function Websites() {
                     <span>
                       Start från <span className="text-cyan-600">3000</span> kr{' '}
                       <span className="text-lg font-bold text-slate-500">
-                        därefter från 250kr i månaden
+                        därefter från 199kr i månaden
                       </span>
                     </span>
                   )
