@@ -2,7 +2,7 @@ Kul att du är intresserad! I paketet _Enkel_ ingår en komplett hemsida som lev
 
 Prissättningen ser ut så här:
 
-- Priset utgår från **3000kr**, men är helt beroende på hur avancerad och omfattande hemsidan är. Detta är ett engångsköp och betalas en gång.
+- Priset utgår från **2000kr**, men är helt beroende på hur avancerad och omfattande hemsidan är. Detta är ett engångsköp och betalas en gång.
 - Vill du senare ha uppdateringar gjorda av mig tillkommer en extra kostnad som utgår från **300kr**. Även denna kostnad är beronde på storleken av förändringen.
 - Prisets bedömning görs när jag har en klar bild av hur hemsidan ska se ut och fungera. Längre ner på sidan kan du se en förenklad skala på hur priset på en hemsida generellt kan se ut.
 

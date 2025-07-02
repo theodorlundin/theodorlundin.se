@@ -1,5 +1,6 @@
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import PrimaryButton from '../../ui/buttons/PrimaryButton'
+import { Link } from 'react-router-dom'
 
 export default function MediaSection({
   imgSrc,
@@ -21,9 +22,9 @@ export default function MediaSection({
       >
         <h2 className="mb-4 text-4xl">{title}</h2>
         <p className="mb-8">{content}</p>
-        <a href={ctaUrl}>
+        <Link to={ctaUrl}>
           <PrimaryButton>{ctaText}</PrimaryButton>
-        </a>
+        </Link>
       </div>
       <LazyLoadImage
         src={imgSrc}

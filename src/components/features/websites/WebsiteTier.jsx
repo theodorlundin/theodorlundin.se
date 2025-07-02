@@ -1,5 +1,6 @@
 import { InfoIcon, PlusCircleIcon } from '@phosphor-icons/react'
 import PrimaryButton from '../../ui/buttons/PrimaryButton'
+import { Link } from 'react-router-dom'
 
 export default function WebsiteTier({
   title = 'Tier',
@@ -31,9 +32,9 @@ export default function WebsiteTier({
       <h2 className="mt-8 mb-4 leading-8">{priceLine}</h2>
       <i className="text-slate-500">{priceDetails}</i>
       <div className="grid place-items-center">
-        <a href={continueUrl}>
+        <Link to={continueUrl}>
           <PrimaryButton className="mt-8">Fortsätt</PrimaryButton>
-        </a>
+        </Link>
       </div>
     </div>
   )

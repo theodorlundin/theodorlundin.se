@@ -79,7 +79,8 @@ export default function Websites() {
                         'Skräddarsydd design',
                         'Fria uppdateringar',
                         'Obegränsad funktionalitet',
-                        'Inget ansvar över drift'
+                        'Inget ansvar över drift',
+                        'Domän, hosting och underhåll ingår'
                       ]
                 }
                 infoPoints={
@@ -88,27 +89,25 @@ export default function Websites() {
                         'Eget ansvar för domän och hosting',
                         'Extra kostnad för uppdatering'
                       ]
-                    : ['Tjänst med månatlig avgift']
+                    : ['Tjänst med årlig avgift']
                 }
                 priceLine={
                   i === 0 ? (
                     <span>
-                      Från <span className="text-cyan-600">2500</span> kr{' '}
+                      Från <span className="text-cyan-600">2000</span> kr{' '}
                       <span className="text-lg font-bold text-slate-500">
                         engångsköp
                       </span>
                     </span>
                   ) : (
                     <span>
-                      Start från <span className="text-cyan-600">3000</span> kr{' '}
-                      <span className="text-lg font-bold text-slate-500">
-                        därefter från 199kr i månaden
-                      </span>
+                      Start från <span className="text-cyan-600">2499</span> kr
+                      / år
                     </span>
                   )
                 }
                 priceDetails={
-                  'Priset ökar vid mer anvancerad funktion eller design.'
+                  'Priset ökar vid mer anvancerad funktion eller design. Priset är inkl. moms.'
                 }
                 continueUrl={`/hemsida/${i === 0 ? 'enkel' : 'allt-i-ett'}`}
               />

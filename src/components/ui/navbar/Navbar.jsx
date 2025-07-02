@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from 'motion/react'
 import Container from '../../../layouts/Container'
 import BoxyLink from '../links/BoxyLink'
 import { ListIcon, XIcon } from '@phosphor-icons/react'
+import { Link } from 'react-router-dom'
 
 export default function Navbar() {
   const [dialogOpen, setDialogOpen] = useState(false)
@@ -45,13 +46,13 @@ export default function Navbar() {
   const navLinks = () => (
     <>
       <li onMouseEnter={playHoverSound}>
-        <BoxyLink href="/om-mig">Om mig</BoxyLink>
+        <BoxyLink to="/om-mig">Om mig</BoxyLink>
       </li>
       <li onMouseEnter={playHoverSound}>
-        <BoxyLink href="/hemsidor">Köp en hemsida</BoxyLink>
+        <BoxyLink to="/hemsidor">Köp en hemsida</BoxyLink>
       </li>
       <li onMouseEnter={playHoverSound}>
-        <BoxyLink href="/kontakt">Kontakt</BoxyLink>
+        <BoxyLink to="/kontakt">Kontakt</BoxyLink>
       </li>
     </>
   )
@@ -65,14 +66,14 @@ export default function Navbar() {
             className="flex items-center justify-between rounded-2xl bg-[#e2e2e275] px-6 py-4
               backdrop-blur-xs"
           >
-            <a href="/" className="leading-0" aria-label="Startsida">
+            <Link to="/" className="leading-0" aria-label="Startsida">
               <LazyLoadImage
                 src="/assets/images/signatur.png"
                 className="w-22"
                 alt=""
                 effect="blur"
               />
-            </a>
+            </Link>
             <ul className="font-display hidden gap-8 lg:flex">{navLinks()}</ul>
             {dialogOpen ? (
               <XIcon size={24} className="cursor-pointer lg:hidden" />

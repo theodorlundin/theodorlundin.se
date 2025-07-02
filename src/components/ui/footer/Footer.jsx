@@ -9,6 +9,7 @@ import {
 import ExternalLink from '../links/ExternalLink'
 import Container from '../../../layouts/Container'
 import ContainerNarrow from '../../../layouts/ContainerNarrow'
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
@@ -21,36 +22,36 @@ export default function Footer() {
             lg:[&>div:last-child]:justify-self-start"
         >
           <div>
-            <a href="/om-mig">Om mig</a>
-            <a href="/hemsidor">Köp en hemsida</a>
-            <a href="/kontakt">Kontakt</a>
-            <a href="/integritet">Integritet</a>
-            <a
-              href="mailto:theodor.lundin@theodorlundin.se"
+            <Link to="/om-mig">Om mig</Link>
+            <Link to="/hemsidor">Köp en hemsida</Link>
+            <Link to="/kontakt">Kontakt</Link>
+            <Link to="/integritet">Integritet</Link>
+            <Link
+              to="mailto:theodor.lundin@theodorlundin.se"
               className="flex items-center gap-1"
             >
               <EnvelopeSimpleIcon />
               theodor.lundin@theodorlundin.se
-            </a>
+            </Link>
           </div>
           <div>
-            <ExternalLink href="https://github.com/theodorlundin">
+            <ExternalLink to="https://github.com/theodorlundin">
               GitHub
             </ExternalLink>
-            <ExternalLink href="https://github.com/theodorlundin/theodorlundin.se">
+            <ExternalLink to="https://github.com/theodorlundin/theodorlundin.se">
               Källkod
             </ExternalLink>
-            <ExternalLink href="https://studian.se">Studian</ExternalLink>
+            <ExternalLink to="https://studian.se">Studian</ExternalLink>
             <div className="grid w-max grid-cols-2 gap-2">
-              <a href="https://instagram.com/theodor_lundin" target="_blank">
+              <Link to="https://instagram.com/theodor_lundin" target="_blank">
                 <InstagramLogoIcon size={32} />
-              </a>
-              <a
-                href="https://bsky.app/profile/theodorlundin.se"
+              </Link>
+              <Link
+                to="https://bsky.app/profile/theodorlundin.se"
                 target="_blank"
               >
                 <ButterflyIcon size={32} />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

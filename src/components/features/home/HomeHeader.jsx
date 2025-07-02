@@ -1,6 +1,7 @@
 import Container from '../../../layouts/Container'
 import BoxyButton from '../../ui/buttons/BoxyButton'
 import { motion } from 'motion/react'
+import { Link } from 'react-router-dom'
 
 export default function HomeHeader() {
   const buttons = [
@@ -55,7 +56,7 @@ export default function HomeHeader() {
               2xl:gap-16"
           >
             {buttons.map((button, index) => (
-              <motion.a
+              <motion.div
                 initial={{ opacity: 0, y: 15 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
@@ -65,13 +66,14 @@ export default function HomeHeader() {
                 }}
                 viewport={{ once: true }}
                 key={index}
-                href={button.href}
                 className="w-full"
               >
-                <BoxyButton key={index} className="w-full">
-                  {button.text}
-                </BoxyButton>
-              </motion.a>
+                <Link to={button.href}>
+                  <BoxyButton key={index} className="w-full">
+                    {button.text}
+                  </BoxyButton>
+                </Link>
+              </motion.div>
             ))}
           </div>
         </Container>

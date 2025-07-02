@@ -6,6 +6,7 @@ import PrimaryButton from '../../ui/buttons/PrimaryButton'
 import usePersistentFormData from '../../../hooks/usePersistentFormData'
 import { toast, ToastContainer } from '../../../lib/toast'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 const submitForm = async (name, email, message) => {
   const res = await axios.post('https://api.theodorlundin.se/form/submit.php', {
@@ -89,7 +90,7 @@ export default function WebsiteForm() {
         }
         required
       >
-        Jag accepterar <a href="/integritet">integritetspolicyn</a>
+        Jag accepterar <Link to="/integritet">integritetspolicyn</Link>
       </Checkbox>
       <PrimaryButton
         loading={loading}
