@@ -5,9 +5,9 @@ import Cal, { getCalApi } from '@calcom/embed-react'
 import { useEffect } from 'react'
 import ContainerNarrow from '../layouts/ContainerNarrow'
 import {
+  BuildingsIcon,
+  GlobeHemisphereWestIcon,
   LineVerticalIcon,
-  PackageIcon,
-  Stack,
   StackIcon
 } from '@phosphor-icons/react'
 import useMarkdown from '../hooks/useMarkdown'
@@ -50,11 +50,14 @@ export default function BuyWebsite() {
       'Jag har utvecklat hemsidor i fem år. Jag jobbar gärna med dig!'
   })
   const { page } = useParams()
-  const [enkelJsx, enkelRaw, enkelLoading] = useMarkdown(
-    `/content/websites/Enkel.md`
+  const [designJsx, designRaw, designLoading] = useMarkdown(
+    `/content/websites/Design.md`
   )
-  const [alltJsx, alltRaw, alltLoading] = useMarkdown(
-    `/content/websites/Allt-i-ett.md`
+  const [digitalJsx, digitalRaw, digitalLoading] = useMarkdown(
+    `/content/websites/Digital-narvaro.md`
+  )
+  const [businessJsx, businessRaw, businessLoading] = useMarkdown(
+    `/content/websites/Business.md`
   )
 
   function NavTab({ correspondingPage, children }) {
@@ -74,35 +77,46 @@ export default function BuyWebsite() {
       <Navbar />
       <Container topOfPage>
         <div
-          className="align-center mx-auto mb-8 grid w-max grid-cols-[1fr_auto_1fr]
-            justify-items-center gap-4 text-xl md:text-2xl
+          className="align-center mx-auto mb-8 grid w-max grid-cols-[1fr_auto_1fr_auto_1fr]
+            justify-items-center gap-4 text-lg md:text-2xl
             [&>a:first-child]:justify-self-end"
         >
-          <NavTab correspondingPage="enkel">
+          <NavTab correspondingPage="design">
             <StackIcon size={32} className="fill-cyan-500" />
-            Enkel
+            Design
           </NavTab>
           <LineVerticalIcon
             size={32}
             className="min-w-4 fill-cyan-500 md:mx-4"
           />
-          <NavTab correspondingPage="allt-i-ett">
-            <PackageIcon size={32} className="fill-cyan-500" />
-            Allt-i-ett
+          <NavTab correspondingPage="digital-narvaro">
+            <GlobeHemisphereWestIcon size={32} className="fill-cyan-500" />
+            Digital närvaro
+          </NavTab>
+          <LineVerticalIcon
+            size={32}
+            className="min-w-4 fill-cyan-500 md:mx-4"
+          />
+          <NavTab correspondingPage="business">
+            <BuildingsIcon size={32} className="fill-cyan-500" />
+            Business
           </NavTab>
         </div>
       </Container>
       <motion.div
         key={page}
-        initial={{ opacity: 0, x: page === 'enkel' ? -50 : 50 }}
-        animate={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, type: 'spring' }}
       >
         <ContainerNarrow>
           <section className="mb-12">
-            {page === 'enkel' && (enkelLoading ? <ContentLoader /> : enkelJsx)}
-            {page === 'allt-i-ett' &&
-              (alltLoading ? <ContentLoader /> : alltJsx)}
+            {page === 'design' &&
+              (designLoading ? <ContentLoader /> : designJsx)}
+            {page === 'digital-narvaro' &&
+              (digitalLoading ? <ContentLoader /> : digitalJsx)}
+            {page === 'business' &&
+              (businessLoading ? <ContentLoader /> : businessJsx)}
           </section>
         </ContainerNarrow>
       </motion.div>
@@ -114,7 +128,9 @@ export default function BuyWebsite() {
           <h2 className="mb-8">Generell prissättning</h2>
           {
             // Load PriceProgress component after markdown is loaded, so the animation doesn't fire instantly
-            !enkelLoading && !alltLoading && <PriceProgress />
+            !designLoading && !digitalLoading && !businessLoading && (
+              <PriceProgress />
+            )
           }
         </section>
         <section className="mt-20">

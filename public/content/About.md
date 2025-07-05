@@ -12,13 +12,19 @@ Jag älskade också att klä ut mig och spela teater. Jag höll egna shower på 
 
 ## II. Hantverket byter form
 
-I början mellanstadiet fick jag min första stationära dator hemma. Den var magisk. Så mycket man kunde göra på den! Skriva professionella texter, programmera och arbeta i ritprogram i 2D och 3D. Det var en ny värld som öppnades för mig. Det praktiska hantverket finns fortfarande djupt rotat i min ryggrad, det släpper jag aldrig, men den digitala världen övertalade mig snabbt, och jag lade det praktiska åt sidan ett tag.
+Någonstans här fann jag även det digitala. Jag och min närmsta kompis började spela in filmer med våra telefoner som vi redigerade och la ut på YouTube. Det var roliga sketcher och dramatiska filmer. Vi träffades varje helg för att spela in nya filmer till vår YouTube-kanal.
 
-Jag hittade snabbt till programmeringen. Jag minns inte exakt vad jag föll för, men precis som med mina dräkter var det ett hantverk som ledde till något visuellt, något man kunde ta i. Inte för att man kan ta i ett datorprogram eller hemsida – men ni förstår vad jag menar. Det blir direkt resultat och man kan följa varje litet framsteg.
+Jag var extremt intresserad av filmskapandet, och satte mig in i allt ifrån kameror till mikrofoner och ljussättning. Jag byggde upp scener hemma med min egenpysslade rekvisita och plastväxter. Jag köpte en green screen och en filmkamera och kollade på behind-the-scenes från kända filmer på Youtube.
 
-Jag började koda i JavaScript. Det är ett av många programmeringsspråk. Enkelt förklarat är ett språk i programmering precis som ett talat språk. De finns många av dem, de är bra på olika sätt och ger ungefär samma resultat. Naturligt ledde detta mig in i webbutvecklingens fantastiska värld, då JavaScript är en av hörnstenarna i webbutveckling. Idag används dock JavaScript till såväl mobilappar som datorspel och fysiska robotar. Enligt vissa programmerare är JavaScript alldeles för långdraget och ett i grunden ganska fumligt språk. Jag håller inte med, jag älskar JavaScript!
+I början mellanstadiet fick jag min första stationära dator hemma. Den var magisk. Så mycket man kunde göra på den! Skriva professionella texter, programmera och redigera. Det var en ny värld som öppnades för mig. Det praktiska hantverket finns fortfarande djupt rotat i min ryggrad, det släpper jag aldrig, men den digitala världen övertalade mig snabbt, och jag lade det praktiska åt sidan ett tag.
 
-Hur som helst, jag hittade webbutvecklingen och ett nytt intresse tog snabbt form. Jag har aldrig gått någon kurs, mer än några hundra tråkiga videor på YouTube, utan är mer eller mindre självlärd. Jag drivs av min egna motivation och glädje, på gott och ont. Men älskar jag något kommer jag inte ge mig förrän jag är felfri i sagt ämne. Idag har jag hållit på med webbutveckling i fem år, och jag är mil ifrån färdiglärd. Det blir man aldrig heller. Likt alla branscher i hela världen uppdateras det mesta hela tiden. Nya effektivare metoder och verktyg.
+Jag och min kompis startade en podcast, för detta var precis i starten av den enorma podcast-eran som var påväg strax innan 2020-talet. Jag lärde mig allt om mikrofoner och ljudmixrar, och vi träffades hemma hos mig och spelade in avsnitt efter avsnitt som jag redigerade. Sedan släppte vi avsnitten på Spotify.
+
+Jag hittade också snabbt till programmeringen. Jag minns inte exakt vad jag föll för, men precis som med mina dräkter var det ett hantverk som ledde till något visuellt och konkret. Det blir direkt resultat och man kan följa varje litet framsteg.
+
+Jag började koda i JavaScript. Det är ett av många programmeringsspråk. Enkelt förklarat är ett språk i programmering precis som ett talat språk. De finns många av dem, de är bra på olika sätt och ger ungefär samma resultat. Naturligt ledde detta mig in i webbutvecklingens fantastiska värld, då JavaScript är en av hörnstenarna i webbutveckling.
+
+Jag hittade webbutvecklingen och ett nytt intresse tog snabbt form. Jag har aldrig gått någon kurs, mer än några hundra tråkiga videor på YouTube genom åren, utan är mer eller mindre självlärd. Jag drivs av min egna motivation och glädje, på gott och ont. Men älskar jag något kommer jag inte ge mig förrän jag är felfri i sagt ämne. Idag har jag hållit på med webbutveckling i över fem år, och jag är mil ifrån färdiglärd. Det blir man aldrig heller. Likt alla branscher i hela världen uppdateras det mesta hela tiden. Nya effektivare metoder och verktyg.
 
 ## III. Teatern blir seriös
 
@@ -40,6 +46,8 @@ Det var min uppväxt på strax över 1000 ord. Idag håller jag på med teatern,
 
 Jag driver undervisningsappen Studian.se sedan ett par år tillbaka. Det var ett av mina tidiga webbutvecklingsprojekt, som blev till något större. Studian är en hemsida för elever och lärare, där man kan skapa läxor i form av flashcards, och lärare kan skapa klassrum och hålla i läxförhör live. Vill du läsa mer om mina tankar kring detta projekt gjorde Barometern ett [fantastiskt reportage](https://www.barometern.se/artikel/theodor-16-har-utvecklat-en-egen-skolplattform-kan-hjalpa-andra/).
 
-Vill du följa mitt liv och mina tankar får du gärna följa bloggen här på hemsidan. Är du intresserad av en egen hemsida designad av mig? Klicka då på _köp en hemsida_ uppe i menyn. Tack för att du besöker min hemsida!😁
+Juni 2025 blev äntligen mitt företag registrerat, efter flera månaders arbete. Företaget heter Lundin Creative Media och det är här jag numera kommer samla alla mina projekt, med den gemensamma nämnaren att allt på något sätt har med media att göra.
+
+Vill du följa mitt liv och mina tankar får du gärna följa mig på mina sociala medier. Är du intresserad av en egen hemsida designad av mig? Klicka då på _köp en hemsida_ uppe i menyn. Tack för att du besöker min hemsida!😁
 
 ![](/assets/images/content/about/fjallen.jpg)

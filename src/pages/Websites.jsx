@@ -8,6 +8,93 @@ import Container from '../layouts/Container'
 import ContainerNarrow from '../layouts/ContainerNarrow'
 import { motion } from 'motion/react'
 
+const websiteTiers = [
+  {
+    title: 'Design',
+    description:
+      'Jag bygger din hemsida efter dina behov och önskemål. Du ansvarar för domän och hosting.',
+    pros: ['Skräddarsydd design', 'Engångsbetalning', 'Full kontroll'],
+    infoPoints: [
+      'Extra kostnad för uppdatering',
+      'Eget ansvar för domän och hosting'
+    ],
+    priceLine: (
+      <span>
+        Från <span className="text-cyan-600">2499</span> kr{' '}
+        <span className="text-lg font-bold text-slate-500">engångsköp</span>
+      </span>
+    ),
+    priceDetails:
+      'Priset sätts efter hemsidans omfattning. Priset är exklusive moms.',
+    target: 'Har koll på hosting och vill ha full kontroll och teknisk frihet.',
+    delivery: 'Filer eller publicering på ditt eget webbhotell',
+    url: 'design'
+  },
+  {
+    title: 'Digital närvaro',
+    description:
+      'En enklare hemsida för dig som privatperson eller nyligen startat företag som vill ha digital närvaro.',
+    pros: [
+      'Skräddarsydd design',
+      'Obegränsat antal e-postadresser (epost@dinhemsida.se)',
+      'Hosting, domän & underhåll ingår',
+      'Fria uppdateringar & support',
+      'Ingen teknisk kunskap krävs',
+      'Hög säkerhet och ständig felsökning',
+      'Domän & innehåll licenserat till dig'
+    ],
+    infoPoints: [
+      'Löpande tjänst (WaaS) med licensering',
+      'Begränsad avancerad funktionalitet',
+      'Maxstorlek på 10GB'
+    ],
+    priceLine: (
+      <span>
+        Från <span className="text-cyan-600">2199</span> kr{' '}
+        <span className="text-lg font-bold text-slate-500">per år</span>
+      </span>
+    ),
+    priceDetails:
+      'Priset sätts efter hemsidans omfattning. Priset är exklusive moms.',
+    target:
+      'Privatperson eller nyligen startat företag som vill vara närvarande online.',
+    delivery:
+      'Drivs på en av mina servrar i Sverige, domän & innehåll licenserat till dig',
+    url: 'digital-narvaro'
+  },
+  {
+    title: 'Business',
+    description:
+      'En fulländad hemsida för dig som driver eget eller små företag som söker en snygg och interaktiv hemsida.',
+    pros: [
+      'Skräddarsydd design',
+      'Obegränsat antal e-postadresser (epost@dinhemsida.se)',
+      'Hosting, domän & underhåll ingår',
+      'Fria uppdateringar & support',
+      'Ingen teknisk kunskap krävs',
+      'Hög säkerhet och ständig felsökning',
+      'Domän & innehåll licenserat till dig',
+      'Ingen maxstorlek',
+      'Avancerad funktionalitet, t.ex. bokningssystem, kundportaler och e-handel',
+      'Prioriterad support'
+    ],
+    infoPoints: ['Löpande tjänst (WaaS) med licensering'],
+    priceLine: (
+      <span>
+        Från <span className="text-cyan-600">2990</span> kr{' '}
+        <span className="text-lg font-bold text-slate-500">per år</span>
+      </span>
+    ),
+    priceDetails:
+      'Priset sätts efter hemsidans omfattning. Priset är exklusive moms.',
+    target:
+      'Driver egen firma, och småföretag som vill ha en trygg, interaktiv och uppdaterad hemsida utan krångel.',
+    delivery:
+      'Drivs på en av mina servrar i Sverige, domän & innehåll licenserat till dig',
+    url: 'business'
+  }
+]
+
 export default function Websites() {
   useDocumentProps({
     title: 'Köp en hemsida › Theodor Lundin',
@@ -34,26 +121,27 @@ export default function Websites() {
         </p>
         <h2>Paket</h2>
         <p>
-          Jag erbjuder i första hand två paket. Vill du endast ha den färdiga
+          Jag erbjuder i första hand tre paket. Vill du endast ha den färdiga
           hemsidan i form av filer redo att ladda upp på ditt webbhotell väljer
-          du paketet <i>Enkel</i>. Har du ingen erfarenhet av webbhotell och
+          du paketet <i>Design</i>. Har du ingen erfarenhet av webbhotell och
           hosting, eller bara vill fokusera på annat än hemsidan rekommenderar
-          jag det andra paketet, <i>Allt-i-ett</i>. Då betalar du månatligen,
-          jag utvecklar din hemsida och har hand om all teknik, och du kan när
-          som helst be mig uppdatera hemsidans innehåll eller design. Har du ett
-          eget förslag på upplägg kan du skicka ett meddelande till mig i
-          formuläret längre ner på sidan.
+          jag de andra paketet, <i>Digital närvaro</i> och <i>Business</i>. Då
+          betalar du årligen, jag utvecklar din hemsida och har hand om all
+          teknik. Du kan när som helst begära uppdateringar av hemsidans
+          innehåll eller design, helt utan extra kostnad. Har du ett eget
+          förslag på upplägg kan du skicka ett meddelande till mig i formuläret
+          längre ner på sidan, så kanske du kan få en egen offert.
         </p>
       </ContainerNarrow>
-      <Container>
+      <div className="mx-auto w-11/12">
         <motion.div
-          className="mt-20 grid items-start gap-x-8 gap-y-16 lg:grid-cols-2"
+          className="mt-20 grid items-start gap-x-8 gap-y-16 lg:grid-cols-3"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           variants={{}}
         >
-          {[0, 1].map((i) => (
+          {websiteTiers.map((tier, i) => (
             <motion.div
               key={i}
               transition={{ duration: 0.75, ease: 'circOut', delay: i * 0.5 }}
@@ -62,59 +150,20 @@ export default function Websites() {
               viewport={{ once: true }}
             >
               <WebsiteTier
-                title={i === 0 ? 'Enkel' : 'Allt-i-ett'}
-                description={
-                  i === 0
-                    ? 'Jag skapar en snygg hemsida efter dina behov och önskemål. Du ansvarar för domän och hosting.'
-                    : 'Jag skapar en fulländad hemsida och ansvarar för domän och hosting. Du kan luta dig tillbaka och fokusera på annat.'
-                }
-                pros={
-                  i === 0
-                    ? [
-                        'Skräddarsydd design',
-                        'Engångsköp',
-                        'Obegränsad funktionalitet'
-                      ]
-                    : [
-                        'Skräddarsydd design',
-                        'Fria uppdateringar',
-                        'Obegränsad funktionalitet',
-                        'Inget ansvar över drift',
-                        'Domän, hosting och underhåll ingår'
-                      ]
-                }
-                infoPoints={
-                  i === 0
-                    ? [
-                        'Eget ansvar för domän och hosting',
-                        'Extra kostnad för uppdatering'
-                      ]
-                    : ['Tjänst med årlig avgift']
-                }
-                priceLine={
-                  i === 0 ? (
-                    <span>
-                      Från <span className="text-cyan-600">2000</span> kr{' '}
-                      <span className="text-lg font-bold text-slate-500">
-                        engångsköp
-                      </span>
-                    </span>
-                  ) : (
-                    <span>
-                      Start från <span className="text-cyan-600">2499</span> kr
-                      / år
-                    </span>
-                  )
-                }
-                priceDetails={
-                  'Priset ökar vid mer anvancerad funktion eller design. Priset är inkl. moms.'
-                }
-                continueUrl={`/hemsida/${i === 0 ? 'enkel' : 'allt-i-ett'}`}
+                title={tier.title}
+                description={tier.description}
+                pros={tier.pros}
+                infoPoints={tier.infoPoints}
+                target={tier.target}
+                delivery={tier.delivery}
+                priceLine={tier.priceLine}
+                priceDetails={tier.priceDetails}
+                continueUrl={`/hemsida/${tier.url}`}
               />
             </motion.div>
           ))}
         </motion.div>
-      </Container>
+      </div>
       <ContainerNarrow bottomOfPage>
         <section className="mt-20">
           <h2>Egen offert</h2>
