@@ -4,7 +4,7 @@ export default function WebsitesHeader() {
   return (
     <header
       className="relative grid h-[75dvh] w-full place-items-center
-        bg-[url('/assets/images/pages/websites/WebsitesHeader.jpg')] bg-cover bg-fixed
+        bg-[url('/assets/images/pages/websites/WebsitesHeader.webp')] bg-cover bg-fixed
         bg-[70%_0%] before:absolute before:top-0 before:h-full before:w-full
         before:bg-linear-to-r before:from-slate-800 before:content-[''] lg:h-[90dvh]"
     >
