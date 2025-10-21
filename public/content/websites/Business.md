@@ -4,8 +4,6 @@ Tjänsten, även kallad WaaS (Website as a Service), innebär att jag som utveck
 
 Fördelar med WaaS är bl.a. att det är konstadseffektivt, hemsidan är alltid up-to-date med ny teknologi, uppdateringar kan begäras helt utan extra kostnad, inga oväntade kostnader dyker upp och fel och buggar på hemsidan löses snabbt. Det är helt enkelt en riktigt bra deal, där jag som webbutvecklare fokuserar på det jag är bäst på, och du kan fokusera på det du är bäst på!
 
-Teknisk information för den som är intresserad: Hemsidan hostas på en server i Stockholm (vill du att servern ska ligga i ett annat land går det utmärkt!). Jag använder mig av _nginx_ som webbserver, och i de flesta fall av React + Vite med TypeScript när jag kodar. Detta ger mycket snabba och pålitliga hemsidor.
-
 ## Prissättning
 
 Prissättningen ser ut så här:

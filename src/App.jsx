@@ -1,4 +1,10 @@
-import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom'
+import {
+  createBrowserRouter,
+  RouterProvider,
+  ScrollRestoration,
+  useLocation,
+  Outlet
+} from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
 import Websites from './pages/Websites'
@@ -22,23 +28,56 @@ function AnalyticsHandler() {
   return null
 }
 
+function RootLayout() {
+  return (
+    <>
+      <ScrollRestoration />
+      <AnalyticsHandler />
+      <Outlet />
+    </>
+  )
+}
+
+const router = createBrowserRouter([
+  {
+    element: <RootLayout />,
+    children: [
+      {
+        path: '/',
+        element: <Home />
+      },
+      {
+        path: '/om-mig',
+        element: <About />
+      },
+      {
+        path: '/hemsidor',
+        element: <Websites />
+      },
+      {
+        path: '/kontakt',
+        element: <Contact />
+      },
+      {
+        path: '/hemsida/:page',
+        element: <BuyWebsite />
+      },
+      {
+        path: '/typografi',
+        element: <Typografi />
+      },
+      {
+        path: '/integritet',
+        element: <Integrity />
+      }
+    ]
+  }
+])
+
 export default function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
-        <AnalyticsHandler />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/om-mig" element={<About />} />
-          <Route path="/hemsidor" element={<Websites />} />
-          <Route path="/kontakt" element={<Contact />} />
-
-          <Route path="/hemsida/:page" element={<BuyWebsite />} />
-
-          <Route path="/typografi" element={<Typografi />} />
-          <Route path="/integritet" element={<Integrity />} />
-        </Routes>
-      </BrowserRouter>
+      <RouterProvider router={router} />
     </QueryClientProvider>
   )
 }

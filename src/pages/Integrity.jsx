@@ -7,8 +7,7 @@ import ContainerNarrow from '../layouts/ContainerNarrow'
 
 export default function Integrity() {
   useDocumentProps({
-    title: 'Integritet › Theodor Lundin',
-    description: 'Läs integritetspolicyn.'
+    title: 'Integritet › Theodor Lundin'
   })
   const [jsx, raw, loading] = useMarkdown('/content/Integrity.md')
 

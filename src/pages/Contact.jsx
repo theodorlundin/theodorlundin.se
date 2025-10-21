@@ -8,9 +8,7 @@ import useDocumentProps from '../hooks/useDocumentProps'
 
 export default function Contact() {
   useDocumentProps({
-    title: 'Kontakt › Theodor Lundin',
-    description:
-      'Tveka inte att kontaka mig. Jag svarar så snart jag kan, oftast inom en dag.'
+    title: 'Kontakt › Theodor Lundin'
   })
 
   return (

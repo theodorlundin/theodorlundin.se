@@ -1,14 +1,11 @@
 import {
-  ArrowUpRightIcon,
   ButterflyIcon,
   CopyrightIcon,
   EnvelopeSimpleIcon,
-  InstagramLogoIcon,
-  TiktokLogoIcon
+  InstagramLogoIcon
 } from '@phosphor-icons/react'
 import ExternalLink from '../links/ExternalLink'
 import Container from '../../../layouts/Container'
-import ContainerNarrow from '../../../layouts/ContainerNarrow'
 import { Link } from 'react-router-dom'
 
 export default function Footer() {
@@ -37,9 +34,6 @@ export default function Footer() {
           <div>
             <ExternalLink to="https://github.com/theodorlundin">
               GitHub
-            </ExternalLink>
-            <ExternalLink to="https://github.com/theodorlundin/theodorlundin.se">
-              Källkod
             </ExternalLink>
             <ExternalLink to="https://studian.se">Studian</ExternalLink>
             <div className="grid w-max grid-cols-2 gap-2">

@@ -4,7 +4,6 @@ import WebsiteTier from '../components/features/websites/WebsiteTier'
 import Footer from '../components/ui/footer/Footer'
 import Navbar from '../components/ui/navbar/Navbar'
 import useDocumentProps from '../hooks/useDocumentProps'
-import Container from '../layouts/Container'
 import ContainerNarrow from '../layouts/ContainerNarrow'
 import { motion } from 'motion/react'
 
@@ -97,9 +96,7 @@ const websiteTiers = [
 
 export default function Websites() {
   useDocumentProps({
-    title: 'Köp en hemsida › Theodor Lundin',
-    description:
-      'Jag har utvecklat hemsidor i fem år. Jag jobbar gärna med dig!'
+    title: 'Köp en hemsida › Theodor Lundin'
   })
 
   return (
@@ -111,13 +108,12 @@ export default function Websites() {
         <p>
           Jag har hållit på med webbutveckling sedan fem år tillbaka. Idag
           sysslar jag med <i>fullstack</i>-utveckling, d.v.s. att jag arbetar
-          med såväl form och design, som servrar och databaser; det som
-          besökaren aldrig ser. Det är en fantastisk process att utveckla en
-          hemsida och få använda sin kreativitet. Vare sig du är en
-          egenföretagare, privatperson eller har något annat projekt på gång
-          jobbar jag gärna med dig! Jag vill höra precis hur du vill ha din
-          hemsida, och sedan utvecklar jag den tillsammans med dig utefter dina
-          behov och önskemål.
+          med såväl form och design, som servrar och databaser. Det är en
+          fantastisk process att utveckla en hemsida och få använda sin
+          kreativitet. Vare sig du är en egenföretagare, privatperson eller har
+          något annat projekt på gång jobbar jag gärna med dig! Jag vill höra
+          precis hur du vill ha din hemsida, och sedan utvecklar jag den
+          tillsammans med dig utefter dina behov och önskemål.
         </p>
         <h2>Paket</h2>
         <p>

@@ -45,9 +45,7 @@ function CalEmbed() {
 
 export default function BuyWebsite() {
   useDocumentProps({
-    title: 'Köp en hemsida › Theodor Lundin',
-    description:
-      'Jag har utvecklat hemsidor i fem år. Jag jobbar gärna med dig!'
+    title: 'Köp en hemsida › Theodor Lundin'
   })
   const { page } = useParams()
   const [designJsx, designRaw, designLoading] = useMarkdown(

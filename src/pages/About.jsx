@@ -7,9 +7,7 @@ import ContainerNarrow from '../layouts/ContainerNarrow'
 
 export default function About() {
   useDocumentProps({
-    title: 'Om › Theodor Lundin',
-    description:
-      'Välkommen till min hemsida! Här kan du läsa om mig och vad jag gör.'
+    title: 'Om › Theodor Lundin'
   })
   const [jsx, raw, loading] = useMarkdown('/content/About.md')
 

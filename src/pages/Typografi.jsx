@@ -7,8 +7,7 @@ import ContainerNarrow from '../layouts/ContainerNarrow'
 
 export default function Typografi() {
   useDocumentProps({
-    title: 'Typografi › Theodor Lundin',
-    description: 'Typografin för theodorlundin.se'
+    title: 'Typografi › Theodor Lundin'
   })
   const [jsx, raw, loading] = useMarkdown('/content/Typografi.md')
 
