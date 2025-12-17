@@ -3,11 +3,11 @@ import { motion } from 'framer-motion'
 export default function PriceProgress() {
   const priceSteps = [
     {
-      title: '2000-3000kr',
+      title: '1000-2000kr',
       infoPoints: ['Statisk', 'Låg interaktionsnivå', 'Endast online-närvaro']
     },
     {
-      title: '3000-5000kr',
+      title: '2000-3000kr',
       infoPoints: [
         'Högre interaktionsnivå, t.ex. formulär',
         'Dynamisk, t.ex. blogg eller nyhetssida',
@@ -15,11 +15,11 @@ export default function PriceProgress() {
       ]
     },
     {
-      title: '5000-7000kr',
+      title: '3000-5000kr',
       infoPoints: ['Administrationssidor', 'Bokningssystem', 'Kundportal']
     },
     {
-      title: '7000kr+',
+      title: '5000kr+',
       infoPoints: [
         'Stort antal sidor',
         'E-handelsfunktioner',

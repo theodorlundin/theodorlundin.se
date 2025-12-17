@@ -8,7 +8,7 @@ Fördelar med WaaS är bl.a. att det är konstadseffektivt, hemsidan är alltid 
 
 Prissättningen ser ut så här:
 
-- Priset utgår från **2990kr** per år, men är helt beroende på hur avancerad och omfattande hemsidan är, dvs. hur mycket tid hemsidan kräver av mig som utvecklare, och faktorer som hur mycket lagringsutrymme hemsidan kräver. Du betalar för ett år i taget och kan avsluta när som helst.
+- Priset utgår från **1999kr** per år, men är helt beroende på hur avancerad och omfattande hemsidan är, dvs. hur mycket tid hemsidan kräver av mig som utvecklare, och faktorer som hur mycket lagringsutrymme hemsidan kräver. Du betalar för ett år i taget och kan avsluta när som helst.
 - Prisets bedömning görs när jag har en klar bild av hur hemsidan ska se ut och fungera. Längre ner på sidan kan du se en _förenklad_ skala på hur priset på en hemsida generellt kan se ut. Ta den dock med en nypa salt.
 
 Känner du dig redo är det fritt fram att boka ett videomöte med mig i kalendern nedan. Skulle du vilja maila först går det självklart bra, använd då formuläret längst ner på sidan.

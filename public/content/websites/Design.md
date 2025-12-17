@@ -6,7 +6,7 @@ När det kommer till domän och hosting är alltså detta ditt ansvar. Dessa tv�
 
 Prissättningen ser ut så här:
 
-- Priset utgår från **2499kr**, men är helt beroende på hur avancerad och omfattande hemsidan är, dvs. hur mycket tid hemsidan kräver av mig som utvecklare. Detta är ett engångsköp och betalas en gång.
+- Priset utgår från **1399kr**, men är helt beroende på hur avancerad och omfattande hemsidan är, dvs. hur mycket tid hemsidan kräver av mig som utvecklare. Detta är ett engångsköp och betalas en gång.
 - Vill du senare ha uppdateringar gjorda av mig tillkommer en extra kostnad som utgår från **300kr**. Även denna kostnad är beronde på storleken av förändringen.
 - Prisets bedömning görs när jag har en klar bild av hur hemsidan ska se ut och fungera. Längre ner på sidan kan du se en _förenklad_ skala på hur priset på en hemsida generellt kan se ut. Ta den dock med en nypa salt.
 

@@ -19,7 +19,7 @@ const websiteTiers = [
     ],
     priceLine: (
       <span>
-        Från <span className="text-cyan-600">2499</span> kr{' '}
+        Från <span className="text-cyan-600">1399</span> kr{' '}
         <span className="text-lg font-bold text-slate-500">engångsköp</span>
       </span>
     ),
@@ -49,7 +49,7 @@ const websiteTiers = [
     ],
     priceLine: (
       <span>
-        Från <span className="text-cyan-600">2199</span> kr{' '}
+        Från <span className="text-cyan-600">1699</span> kr{' '}
         <span className="text-lg font-bold text-slate-500">per år</span>
       </span>
     ),
@@ -80,7 +80,7 @@ const websiteTiers = [
     infoPoints: ['Löpande tjänst (WaaS) med licensering'],
     priceLine: (
       <span>
-        Från <span className="text-cyan-600">2990</span> kr{' '}
+        Från <span className="text-cyan-600">1999</span> kr{' '}
         <span className="text-lg font-bold text-slate-500">per år</span>
       </span>
     ),
