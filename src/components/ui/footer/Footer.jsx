@@ -50,13 +50,12 @@ export default function Footer() {
           </div>
         </div>
         <img
-          src="/assets/images/logos/LCM-light-text.png"
+          src="/assets/images/logos/Dreamable-Media-Logo-1500px.png"
           alt=""
           className="w-40"
         />
         <p className="mt-6 flex items-center gap-2">
-          <CopyrightIcon size={24} className="fill-cyan-500" /> Lundin Creative
-          Media, {new Date().getFullYear()}
+          <CopyrightIcon size={24} className="fill-cyan-500" /> Dreamable Media, {new Date().getFullYear()}
         </p>
       </Container>
       <img

@@ -22,9 +22,9 @@ Jag och min kompis startade en podcast, för detta var precis i starten av den e
 
 Jag hittade också snabbt till programmeringen. Jag minns inte exakt vad jag föll för, men precis som med mina dräkter var det ett hantverk som ledde till något visuellt och konkret. Det blir direkt resultat och man kan följa varje litet framsteg.
 
-Jag började koda i JavaScript. Det är ett av många programmeringsspråk. Enkelt förklarat är ett språk i programmering precis som ett talat språk. De finns många av dem, de är bra på olika sätt och ger ungefär samma resultat. Naturligt ledde detta mig in i webbutvecklingens fantastiska värld, då JavaScript är en av hörnstenarna i webbutveckling.
+Jag började koda i JavaScript, ett av många programmeringsspråk. Enkelt förklarat är ett språk i programmering precis som ett talat språk. De finns många av dem, de är bra på olika sätt och ger ungefär samma resultat. Naturligt ledde detta mig in i webbutvecklingens fantastiska värld, då JavaScript är en av hörnstenarna i webbutveckling.
 
-Jag hittade webbutvecklingen och ett nytt intresse tog snabbt form. Jag har aldrig gått någon kurs, mer än några hundra tråkiga videor på YouTube genom åren, utan är mer eller mindre självlärd. Jag drivs av min egna motivation och glädje, på gott och ont. Men älskar jag något kommer jag inte ge mig förrän jag är felfri i sagt ämne. Idag har jag hållit på med webbutveckling i över fem år, och jag är mil ifrån färdiglärd. Det blir man aldrig heller. Likt alla branscher i hela världen uppdateras det mesta hela tiden. Nya effektivare metoder och verktyg.
+Ett nytt intresse tog snabbt form. Jag har aldrig gått någon kurs, mer än några hundra tråkiga videor på YouTube genom åren, utan är mer eller mindre självlärd. Jag drivs av min egna motivation och glädje, på gott och ont. Men älskar jag något kommer jag inte ge mig förrän jag är felfri i sagt ämne. Idag har jag hållit på med webbutveckling i över fem år, och jag är mil ifrån färdiglärd. Det blir man aldrig heller. Likt alla branscher i hela världen uppdateras det mesta hela tiden. Nya effektivare metoder och verktyg.
 
 ## III. Teatern blir seriös
 
@@ -46,7 +46,7 @@ Det var min uppväxt på strax över 1000 ord. Idag håller jag på med teatern,
 
 Jag driver undervisningsappen Studian.se sedan ett par år tillbaka. Det var ett av mina tidiga webbutvecklingsprojekt, som blev till något större. Studian är en hemsida för elever och lärare, där man kan skapa läxor i form av flashcards, och lärare kan skapa klassrum och hålla i läxförhör live. Vill du läsa mer om mina tankar kring detta projekt gjorde Barometern ett [fantastiskt reportage](https://www.barometern.se/artikel/theodor-16-har-utvecklat-en-egen-skolplattform-kan-hjalpa-andra/).
 
-Juni 2025 blev äntligen mitt företag registrerat, efter flera månaders arbete. Företaget heter Lundin Creative Media och det är här jag numera kommer samla alla mina projekt, med den gemensamma nämnaren att allt på något sätt har med media att göra.
+Juni 2025 blev äntligen mitt företag registrerat, efter flera månaders arbete. Företaget heter Dreamable Media och det är här jag numera kommer samla alla mina projekt, med den gemensamma nämnaren att allt på något sätt har med media att göra.
 
 Vill du följa mitt liv och mina tankar får du gärna följa mig på mina sociala medier. Är du intresserad av en egen hemsida designad av mig? Klicka då på _köp en hemsida_ uppe i menyn. Tack för att du besöker min hemsida!😁
 
