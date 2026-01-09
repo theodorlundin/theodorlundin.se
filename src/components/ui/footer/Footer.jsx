@@ -50,7 +50,7 @@ export default function Footer() {
           </div>
         </div>
         <img
-          src="/assets/images/logos/Dreamable-Media-Logo-1500px.png"
+          src="/assets/images/logos/Dreamable-Media-Logo-1500px-light.png"
           alt=""
           className="w-40"
         />
